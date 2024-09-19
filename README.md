@@ -1,4 +1,4 @@
-Mata Kuliah: Pemrograman Perangkat Bergerak
-Nama: Afad Fath Musyarof Halim
-NIM: 2211104030
-Kelas: S1SE-06-01
+# Pemrograman Perangkat Bergerak
+## Afad Fath Musyarof Halim <br>
+## 2211104030 <br>
+## S1SE-06-01
