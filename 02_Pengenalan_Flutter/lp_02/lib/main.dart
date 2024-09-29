@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,45 +31,160 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-  String pesan = "";
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-      pesan = "Lu dah nge klik $_counter x";
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        backgroundColor: Colors.amber,
+        title: Align(
+          alignment: Alignment.center,
+          child: Text('LP_02'),
+        ),
       ),
-      body: Center(
+      body: Padding(
+        // widget padding di parent body
+        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'V',
-              style: TextStyle(
-                  fontWeight: FontWeight.w900, color: Colors.redAccent),
-              textScaler: TextScaler.linear(5.0),
+          children: [
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 10),
+              child: Text('BIODATA',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             ),
-            Text(
-              pesan,
-              style: Theme.of(context).textTheme.headlineMedium,
+            Container(
+              color: Colors.amber.shade100,
+              margin: EdgeInsets.symmetric(vertical: 5),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                children: const [
+                  SizedBox(
+                    width: 80,
+                    child: Text("Nama ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                        textScaler: TextScaler.linear(1.2)),
+                  ),
+                  SizedBox(
+                    child: Text("Afad Fath Musyarof Halim",
+                        textScaler: TextScaler.linear(1.1)),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.amber.shade100,
+              margin: EdgeInsets.symmetric(vertical: 5),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                children: const [
+                  SizedBox(
+                    width: 80,
+                    child: Text("NIM ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                        textScaler: TextScaler.linear(1.2)),
+                  ),
+                  SizedBox(
+                    child:
+                        Text("2211104030", textScaler: TextScaler.linear(1.1)),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.amber.shade100,
+              margin: EdgeInsets.symmetric(vertical: 5),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                children: const [
+                  SizedBox(
+                    width: 80,
+                    child: Text("Kelas ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                        textScaler: TextScaler.linear(1.2)),
+                  ),
+                  SizedBox(
+                    child:
+                        Text("S1SE-06-01", textScaler: TextScaler.linear(1.1)),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.amber.shade100,
+              margin: EdgeInsets.symmetric(vertical: 5),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                children: const [
+                  SizedBox(
+                    width: 80,
+                    child: Text("Jenis Kelamin ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                        textScaler: TextScaler.linear(1.2)),
+                  ),
+                  SizedBox(
+                    child:
+                        Text("Laki Laki", textScaler: TextScaler.linear(1.1)),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.amber.shade100,
+              margin: EdgeInsets.symmetric(vertical: 5),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                children: const [
+                  SizedBox(
+                    width: 80,
+                    child: Text("Agama ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                        textScaler: TextScaler.linear(1.2)),
+                  ),
+                  SizedBox(
+                    child: Text("Islam", textScaler: TextScaler.linear(1.1)),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.amber.shade100,
+              margin: EdgeInsets.symmetric(vertical: 5),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                children: const [
+                  SizedBox(
+                    width: 80,
+                    child: Text("Tempat Lahir ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                        textScaler: TextScaler.linear(1.2)),
+                  ),
+                  SizedBox(
+                    child: Text("Wonosobo", textScaler: TextScaler.linear(1.1)),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.amber.shade100,
+              margin: EdgeInsets.symmetric(vertical: 5),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                children: const [
+                  SizedBox(
+                    width: 80,
+                    child: Text("Tanggal Lahir ",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                        textScaler: TextScaler.linear(1.2)),
+                  ),
+                  SizedBox(
+                    child: Text("01 Januari 2004",
+                        textScaler: TextScaler.linear(1.1)),
+                  )
+                ],
+              ),
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
