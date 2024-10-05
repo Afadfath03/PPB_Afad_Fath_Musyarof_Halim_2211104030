@@ -4,34 +4,37 @@
 
 ## GUIDED
 
-- Karakteristik\
+1. Karakteristik\
   ![image](https://github.com/user-attachments/assets/2191a995-9774-4db0-9089-426b08095512)
 
-- Variable\
+2. Variable\
   ![image](https://github.com/user-attachments/assets/96f21a49-8aaa-46e9-ba75-a4f7984c8962)
 
-- Statement
-  - If - Else\
+3. Statement
+
+   - If - Else\
   ![image](https://github.com/user-attachments/assets/05147187-1ac4-48e8-b067-a049f755e5a6)
 
-  - Switch-Case\
+   - Switch-Case\
   ![image](https://github.com/user-attachments/assets/e5f7f989-cc40-4d89-aec0-aa72f0055fb6)
 
-- Looping
-  - For\
+4. Looping
+
+   - For\
   ![image](https://github.com/user-attachments/assets/443bdb17-9780-44e3-8af3-4719b751405e)
 
-  - While\
+   - While\
   ![image](https://github.com/user-attachments/assets/be8ebe32-a025-45a6-9f46-6257a0ed0e91)
 
-- List
-  - Fixed\
+5. List
+
+   - Fixed\
   ![image](https://github.com/user-attachments/assets/ff692a42-4c4a-4fda-a2b9-cc5520804e66)
 
-  - Growable\
+   - Growable\
   ![image](https://github.com/user-attachments/assets/087a118e-336d-4219-bebd-13d7b61df2ad)
 
-- Fungsi\
+6. Fungsi\
   ![image](https://github.com/user-attachments/assets/5b731351-53c1-47c5-a80b-c512e1781897)
 
 ## UNGUIDED
@@ -67,10 +70,10 @@
            3. Pindah ke baris baru dan ulang iterasi
 
 3. Tugas Fungsi (Function)
-   - Kode
+   - Kode\
    ![image](https://github.com/user-attachments/assets/98d75819-8a65-4145-9242-bb935d9fecb4)
 
-   - Running
+   - Running\
    ![image](https://github.com/user-attachments/assets/62dfd248-86da-4409-bee2-099f1db4e5e7)
 
    - Penjelasan
