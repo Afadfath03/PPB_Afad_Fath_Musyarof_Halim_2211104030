@@ -1,41 +1,41 @@
 void main() {
   // If Else
-  // var openHours = 8;
-  // var closedHours = 21;
-  // var now = 8;
+  var openHours = 8;
+  var closedHours = 21;
+  var now = 8;
 
-  // if (now > openHours && now < closedHours) {
-  //   print("Hello, we're open");
-  // } else {
-  //   print("Sorry, we've closed");
-  // }
+  if (now > openHours && now < closedHours) {
+    print("Hello, we're open");
+  } else {
+    print("Sorry, we've closed");
+  }
 
   // Switch Case
-  // var day = 3; // Misalkan 1 = Senin, 2 = Selasa, dst.
+  var day = 3; // Misalkan 1 = Senin, 2 = Selasa, dst.
 
-  // switch (day) {
-  //   case 1:
-  //     print("Senin");
-  //     break;
-  //   case 2:
-  //     print("Selasa");
-  //     break;
-  //   case 3:
-  //     print("Rabu");
-  //     break;
-  //   case 4:
-  //     print("Kamis");
-  //     break;
-  //   case 5:
-  //     print("Jumat");
-  //     break;
-  //   case 6:
-  //     print("Sabtu");
-  //     break;
-  //   case 7:
-  //     print("Minggu");
-  //     break;
-  //   default:
-  //     print("Hari tidak valid");
-  // }
+  switch (day) {
+    case 1:
+      print("Senin");
+      break;
+    case 2:
+      print("Selasa");
+      break;
+    case 3:
+      print("Rabu");
+      break;
+    case 4:
+      print("Kamis");
+      break;
+    case 5:
+      print("Jumat");
+      break;
+    case 6:
+      print("Sabtu");
+      break;
+    case 7:
+      print("Minggu");
+      break;
+    default:
+      print("Hari tidak valid");
+  }
 }

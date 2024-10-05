@@ -1,1 +1,6 @@
 # PERTEMUAN KE 3
+
+## GUIDED
+
+
+## UNGUIDED

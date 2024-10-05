@@ -15,7 +15,7 @@ void main() {
 bool isPrima(int nilai) {
   if (nilai <= 1) return false;
 
-  for (int i = 2; i <= nilai / 2; i++) {
+  for (int i = 2; i <= nilai; i++) {
     if (nilai % i == 0) return false;
   }
 
