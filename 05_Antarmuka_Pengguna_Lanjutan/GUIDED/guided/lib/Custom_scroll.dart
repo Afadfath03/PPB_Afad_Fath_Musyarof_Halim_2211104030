@@ -39,7 +39,7 @@ class _CusScrollState extends State<CusScroll> {
       ),
       body: CustomScrollView(
         slivers: <Widget>[
-//Sliver App Bar
+          //Sliver App Bar
           const SliverAppBar(
               pinned: true,
               expandedHeight: 250.0,
@@ -53,7 +53,7 @@ class _CusScrollState extends State<CusScroll> {
                 ),
                 collapseMode: CollapseMode.none,
               )),
-//Sliver Grid
+          //Sliver Grid
           SliverGrid(
             gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
               maxCrossAxisExtent: 200.0,
