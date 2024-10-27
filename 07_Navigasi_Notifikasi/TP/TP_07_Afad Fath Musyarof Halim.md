@@ -141,5 +141,9 @@ Buatlah satu project baru, yang mana di dalamnya terdapat navigasi untuk pindah 
     ```
 
 - Output
-
+  - halaman 1 <br> 
+  - halaman 2 <br>
 - Penjelasan
+  - pada `main.dart` terdapat route untuk menentukan arah dari halaman yang digunakan
+  - pada `halaman_1.dart` terdapat `Navigator.pushNamed` untuk pindah ke halaman lain
+  - pada `halaman_2.dart` terdapat `Navigator.pop` untuk mnenutup halaman saat ini dan kembali ke halaman sebelumnya
