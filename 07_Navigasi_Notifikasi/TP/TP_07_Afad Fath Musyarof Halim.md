@@ -38,8 +38,6 @@ TELKOM UNIVERSITY PURWOKERTO
 
 ## Tugas Pendahuluan
 
-### SOAL
-
 ``` txt
 Buatlah satu project baru, yang mana di dalamnya terdapat navigasi untuk pindah dari satu halaman ke halaman lainnya 
 ```
@@ -141,8 +139,10 @@ Buatlah satu project baru, yang mana di dalamnya terdapat navigasi untuk pindah 
     ```
 
 - Output
-  - halaman 1 <br> 
-  - halaman 2 <br>
+  - halaman 1 <br> ![image](https://github.com/user-attachments/assets/5a8c47a7-16d5-415c-8c18-adff3c53c95b)
+
+  - halaman 2 <br> ![image](https://github.com/user-attachments/assets/9b1f2e7a-a3fc-4c8c-9f82-91d8dcef8089)
+
 - Penjelasan
   - pada `main.dart` terdapat route untuk menentukan arah dari halaman yang digunakan
   - pada `halaman_1.dart` terdapat `Navigator.pushNamed` untuk pindah ke halaman lain
