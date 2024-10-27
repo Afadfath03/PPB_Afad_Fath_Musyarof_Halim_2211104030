@@ -33,3 +33,21 @@
       ![image](https://github.com/user-attachments/assets/0430c895-65af-4deb-9868-08f4c3ec2c28)<br>
       ![image](https://github.com/user-attachments/assets/9b63f4d5-12f9-4db1-8a3f-1929b12aeb73)<br>
          
+---
+
+### UNGUIDED
+1. Kode
+<br> ![image](https://github.com/user-attachments/assets/57942c6b-bdeb-48d8-ba6c-243b45ed5c55)
+
+2. Running
+<br> ![image](https://github.com/user-attachments/assets/4efb7258-5edd-4aaf-bdb2-e72a733001de)
+
+3. Penjelasan Kode
+   1. Perubahan kode dilakukan hanya pada bagian home dari tugas pendahuluan
+   2. `Padding` untuk memberikan jarak pada ujung
+   3. `Column` untuk membentuk model barisan pada widget
+   4. `Textfield` adalah widget untuk membuat sebuah masukan text
+   5. `decoration` untuk memberikan dekorasi pada widget
+   6. `sizedbox` untuk memberikan jarak antar widget
+   7. `obscureText` membuat inputan teks tidak terlihat
+   8. `ElevatedButton` adalah widget untuk membuat tombol
