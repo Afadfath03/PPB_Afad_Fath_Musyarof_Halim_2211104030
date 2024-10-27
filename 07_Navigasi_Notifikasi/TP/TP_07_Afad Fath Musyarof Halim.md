@@ -145,5 +145,7 @@ Buatlah satu project baru, yang mana di dalamnya terdapat navigasi untuk pindah 
 
 - Penjelasan
   - pada `main.dart` terdapat route untuk menentukan arah dari halaman yang digunakan
+  - `route '/'` digunakan sebagai route default
   - pada `halaman_1.dart` terdapat `Navigator.pushNamed` untuk pindah ke halaman lain
   - pada `halaman_2.dart` terdapat `Navigator.pop` untuk mnenutup halaman saat ini dan kembali ke halaman sebelumnya
+  - `ElevatedButton` digunakan sebagai tombol navigasi
