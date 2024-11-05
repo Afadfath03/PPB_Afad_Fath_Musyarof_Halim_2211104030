@@ -9,17 +9,18 @@ class ProductDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(product.nama)),
+      appBar: AppBar(backgroundColor: Colors.blue, title: Text(product.nama)),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(product.gambar),
+            Image(image: AssetImage(product.gambar), height: 250),
             const SizedBox(height: 16.0),
             Text(product.nama, style: const TextStyle(fontSize: 24.0)),
             const SizedBox(height: 8.0),
-            Text("Rp. ${product.harga}", style: const TextStyle(fontSize: 24.0)),
+            Text("Rp. ${product.harga}",
+                style: const TextStyle(fontSize: 24.0)),
             const SizedBox(height: 16.0),
             Text(product.deskripsi),
           ],
