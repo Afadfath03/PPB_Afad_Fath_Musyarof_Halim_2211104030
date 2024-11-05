@@ -19,7 +19,7 @@ class ProductDetailPage extends StatelessWidget {
             const SizedBox(height: 16.0),
             Text(product.nama, style: const TextStyle(fontSize: 24.0)),
             const SizedBox(height: 8.0),
-            Text("\$${product.harga}", style: const TextStyle(fontSize: 24.0)),
+            Text("Rp. ${product.harga}", style: const TextStyle(fontSize: 24.0)),
             const SizedBox(height: 16.0),
             Text(product.deskripsi),
           ],
