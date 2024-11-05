@@ -103,6 +103,10 @@
 
 ### UNGUIDED
 
+``` text
+Buatlah satu project untuk menampilkan beberapa produk dan halaman e-commerce dengan menerapkan class model serta navigasi halaman.
+```
+
 - Class Model
 ``` dart
 class Product {
@@ -234,6 +238,9 @@ class Product {
   ```
 
 - Output
+  - List <br> ![image](https://github.com/user-attachments/assets/217a99b7-641d-4abd-8e1f-e8dcf98a9330)
+  - Detail <br> ![image](https://github.com/user-attachments/assets/2df111ed-65fc-48fd-89a8-330d155f3362)
+   
 - Penjelasan
   - class model untuk menentukan data yang digunakan
   - `ListView.builder` untuk menampilkan list berdasarkan model yang sudah ada datanya
