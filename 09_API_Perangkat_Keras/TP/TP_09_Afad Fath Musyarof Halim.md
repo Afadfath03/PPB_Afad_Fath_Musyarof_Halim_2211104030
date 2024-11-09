@@ -4,7 +4,7 @@ TUGAS PENDAHULUAN
 <br>
 PEMROGRAMAN PERANGKAT BERGERAK
 
-MODUL VIII
+MODUL IX
 <br>
 API Perangkat Keras
 
@@ -39,7 +39,7 @@ TELKOM UNIVERSITY PURWOKERTO
 ## Tugas Pendahuluan
 
 ``` txt
-Buatlah satu project baru, yang mana di dalamnya terdapat navigasi untuk pindah dari satu halaman ke halaman lainnya 
+Buatlah satu project baru, yang mana di dalamnya memuat container berisi Icons.image_outlined, button camera, button gallery dan button hapus gambar. Button tidak harus berfungsi.
 ```
 
 - Source Code
@@ -159,7 +159,7 @@ Buatlah satu project baru, yang mana di dalamnya terdapat navigasi untuk pindah 
 	}
     ```
 
-- Output
+- Output <br> ![image](https://github.com/user-attachments/assets/6a1ac386-4b41-4ae1-b40a-20927215aa5e)
 
 - Penjelasan
   - `Center` untuk membuat widget menjadi di tengah
