@@ -39,7 +39,7 @@ TELKOM UNIVERSITY PURWOKERTO
 ## Tugas Pendahuluan
 
 **1. Jelaskan secara singkat fungsi SQLite dalam pengembangan aplikasi mobile!**
-<br> SQLite adalah sistem manajemen data yang digunakan untuk menyimpan data secara lokal
+<br> SQLite adalah sistem manajemen data yang digunakan untuk mengontrol data yang tersimpan secara lokal
 
 **2. Apa saja yang dimaksud dengan operasi CRUD? Berikan penjelasan singkat untuk masing-masing operasi!**
 <br> CRUD (Create, Read, Update, Delete) adalah modul dasar untuk mengoperasikan data
