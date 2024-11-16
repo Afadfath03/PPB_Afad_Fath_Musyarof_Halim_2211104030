@@ -1,12 +1,5 @@
 # PERTEMUAN KE 10
 
-## Data Storage
+## Data Storage Bagian 1
 
 ---
-
-### GUIDED
-
---- 
-
-### UNGUIDED
-``` text
