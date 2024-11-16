@@ -39,13 +39,13 @@ TELKOM UNIVERSITY PURWOKERTO
 ## Tugas Pendahuluan
 
 **1. Jelaskan secara singkat fungsi SQLite dalam pengembangan aplikasi mobile!**
-SQLite adalah sistem manajemen data yang digunakan untuk menyimpan data secara lokal
+<br> SQLite adalah sistem manajemen data yang digunakan untuk menyimpan data secara lokal
 
 **2. Apa saja yang dimaksud dengan operasi CRUD? Berikan penjelasan singkat untuk masing-masing operasi!**
-CRUD (Create, Read, Update, Delete) adalah modul dasar untuk mengoperasikan data
+<br> CRUD (Create, Read, Update, Delete) adalah modul dasar untuk mengoperasikan data
 
 - Create untuk membuat atau memasukkan data baru
-- Read untuk membaca data yang tersimpan
+- Read untuk membaca atau menampilkan data yang tersimpan
 - Update untuk mengubah data yang tersimpan
 - Delete untuk menghapus data yang tersimpan
 
@@ -71,7 +71,7 @@ CREATE TABLE users (
 
 ```dart
 static Future<List<Map<String, dynamic>>> getUsers() async {
- final db = await SQLHelper.db();
- return db.query(__________);
+	final db = await SQLHelper.db();
+	return db.query(__________);
 }
 ```
