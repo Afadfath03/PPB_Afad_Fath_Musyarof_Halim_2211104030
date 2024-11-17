@@ -50,16 +50,16 @@ TELKOM UNIVERSITY PURWOKERTO
 - Delete untuk menghapus data yang tersimpan
 
 **3. Tuliskan kode SQL untuk membuat tabel bernama users dengan kolom berikut :**
-**- id (integer, primary key, auto increment)**
-**- name (text)**
-**- email (text)**
-**- createdAt (timestamp, default value adalah waktu sekarang)**
+- **id (integer, primary key, auto increment)**
+- **name (text)**
+- **email (text)**
+- **createdAt (timestamp, default value adalah waktu sekarang)**
 
 ```sql
 CREATE TABLE users (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
-	name TEXT NOT NULL,
-	email TEXT NOT NULL,
+	name TEXT,
+	email TEXT,
 	createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
