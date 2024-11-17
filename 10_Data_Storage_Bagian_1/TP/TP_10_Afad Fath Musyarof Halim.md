@@ -77,4 +77,4 @@ static Future<List<Map<String, dynamic>>> getUsers() async {
 	return db.query(__________);
 }
 ```
-- db.query('users');
+- return db.query('users');
