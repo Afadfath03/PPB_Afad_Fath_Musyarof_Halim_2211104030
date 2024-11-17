@@ -65,7 +65,9 @@ CREATE TABLE users (
 ```
 
 **4. Sebutkan langkah-langkah utama untuk menggunakan plugin sqflite di dalam Flutter!**
-1. 
+1. Menambahkan dependencies pada projek
+2. Membuat class Helper yang berisi method yang dibutuhkan seperti membuka database, membuat database, dan CRUD
+3. Class Helper bisa di panggil di class lain untuk berinteraksi dengan database
 
 **5. Lengkapi kode berikut untuk membaca semua data dari tabel users menggunakan sqflite**
 
@@ -75,3 +77,4 @@ static Future<List<Map<String, dynamic>>> getUsers() async {
 	return db.query(__________);
 }
 ```
+- db.query('users');
