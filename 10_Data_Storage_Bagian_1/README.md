@@ -453,12 +453,12 @@ c) Implementasikan fitur Create (untuk menyimpan data mahasiswa) dan Read (untuk
       }
       ```
 2. Output
-   1. home <br> ![home](https://github.com/user-attachments/assets/3193a52c-7fd1-46c3-b611-20563c1c45e0)
+   1. home <br> <img src="https://github.com/user-attachments/assets/3193a52c-7fd1-46c3-b611-20563c1c45e0" alt="default" width="200"/>
 
-   2. input <br> ![input](https://github.com/user-attachments/assets/45f4072d-158c-4f4c-bfd2-e548b73f328b)
+   2. input <br> <img src="https://github.com/user-attachments/assets/45f4072d-158c-4f4c-bfd2-e548b73f328b" alt="default" width="200"/>
 
 3. Penjelasan
-   1. helper berisi fungsi yang diperlukan untuk menggunakan sqlite seperti buat database, buat table, isi table, hapus data, ubah data
+   1. class helper berisi fungsi yang diperlukan untuk menggunakan sqlite seperti buat database, buat table, isi table, hapus data, ubah data
    2. `_refreshData` untuk memperbarui tampilan setelah perubahan data
    3. `navigateAddData` untuk pindah ke halaman input setelah menekan floatingActionButton
    4. `Listview` untuk menampilkan daftar data yang ada pada database
