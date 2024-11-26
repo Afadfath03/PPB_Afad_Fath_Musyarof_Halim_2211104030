@@ -55,6 +55,7 @@ TELKOM UNIVERSITY PURWOKERTO
 <br> FCM Token adalah kumpulan karakter unik yang berfungsi sebagai identitas unik setiap perangkat sehingga saat mengirimkan pesan dapat menuju ke perangkat yang tepat
 
 **4. Jelaskan bagaimana Firebase Cloud Messaging menangani notifikasi dalam kondisi aplikasi berikut:**
+<br>
 **a. Saat aplikasi berada di foreground.**
 <br> Pesan akan ditampilkan langsung pada aplikasi dan tidak perlu menampilkan tray notifikasi system
 
