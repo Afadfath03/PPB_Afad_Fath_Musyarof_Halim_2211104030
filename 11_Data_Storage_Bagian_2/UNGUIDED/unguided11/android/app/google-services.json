@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "764684896281",
+    "project_id": "unguided11-c9955",
+    "storage_bucket": "unguided11-c9955.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764684896281:android:6bab1d755bea5683bd0288",
+        "android_client_info": {
+          "package_name": "com.example.unguided11"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQDvyp4Ts8h0-M1ju03RL3iRsgPKUp584"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
