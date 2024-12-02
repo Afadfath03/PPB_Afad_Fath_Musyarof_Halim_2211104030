@@ -43,37 +43,46 @@ TELKOM UNIVERSITY PURWOKERTO
 **- Apa nama package yang digunakan untuk mengintegrasikan Google Maps di Flutter dan sebutkan langkah-langkah yang diperlukan untuk menambahkan package Google Maps ke dalam proyek Flutter.**
 <br> nama package: google_maps_flutter
 <br> langkah-langkah:
-	1. Tambah dependencies
-	2. Konfigurasi API
-	3. Konfigurasi Perizinan
+1. Tambah dependencies
+2. Konfigurasi API
+3. Konfigurasi Perizinan
+
+
 **- Mengapa kita perlu menambahkan API Key, dan di mana API Key tersebut diatur dalam aplikasi Flutter?**
 <br> Sebagai identitas aplikasi saat mengakses maps
 
 **2. Menampilkan Google Maps**
 <br>
 **- Tuliskan kode untuk menampilkan Google Map di Flutter menggunakan widget GoogleMap**
-	``` dart
-	GoogleMap(
-		initialCameraPosition: CameraPosition(
-		  target: LatLng(-6.2088, 106.8456), // Jakarta
-		  zoom: 14,
-	),
-	```
+<br>
+``` dart
+GoogleMap(
+	initialCameraPosition: CameraPosition(
+	  target: LatLng(-6.2088, 106.8456), // Jakarta
+	  zoom: 14,
+),
+```
+<br>
+
 **- Bagaimana cara menentukan posisi awal kamera (camera position) pada Google Maps di Flutter?**
 <br> dengan initialCameraPosition pada GoogleMap dan CameraPosition sebagai koordinat
 
 **- Sebutkan properti utama dari widget GoogleMap dan fungsinya.**
+1. initialCameraPosition: Posisi awal kamera
+2. markers: Penanda
+3. mapType: Jenis peta
+4. onMapCreated: Callback setelah map selesai dibuat
+5. onTap: Callback saat layar map disentuh
 <br>
-	1. initialCameraPosition: Posisi awal kamera
-	2. markers: Penanda
-	3. mapType: Jenis peta
-	4. onMapCreated: Callback setelah map selesai dibuat
-	5. onTap: Callback saat layar map disentuh
 
 **3. Menambah Marker**
+
 <br>
+
 **- Tuliskan kode untuk menambahkan marker di posisi tertentu (latitude: -6.2088, longitude: 106.8456) pada Google Maps.**
+
 <br>
+
 ``` dart
 GoogleMap( 
 	initialCameraPosition: CameraPosition( 
@@ -87,11 +96,13 @@ markers: {
 			title: 'Jakarta', 
 	),
 ```
+
 **- Bagaimana cara menampilkan info window saat marker diklik?**
 <br> property infoWindow berisi informasi yang muncul saat marker ditekan
 
 **4. Menggunakan Place Picker**
 <br>
+
 **- Apa itu Place Picker, dan bagaimana cara kerjanya di Flutter dan sebutkan nama package yang digunakan untuk implementasi Place Picker di Flutter.**
 <br> Place picker adalah fitur untuk memilih lokasi pada peta
 <br> package nya google_maps_place_picker
