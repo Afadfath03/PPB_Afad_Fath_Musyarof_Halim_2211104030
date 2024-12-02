@@ -159,3 +159,170 @@ class _MynotifState extends State<Mynotif> {
   }
 }
 ```
+
+---
+
+### UNGUIDED
+``` text
+Modifikasi guided sesuai nama, nim, kelas, prodi
+```
+
+1. Koding
+   - main.dart
+     ``` dart
+      import 'package:firebase_core/firebase_core.dart';
+      import 'package:firebase_messaging/firebase_messaging.dart';
+      import 'package:flutter/material.dart';
+      import 'package:unguided11/firebase.dart';
+      
+      import 'notif.dart';
+      
+      String? title = '';
+      String? data = '';
+      
+      Future<void> main() async {
+        WidgetsFlutterBinding.ensureInitialized();
+        await Firebase.initializeApp();
+        FirebaseApi().initFCM();
+        LocalNotificationHandler().initLocalNotifications();
+        runApp(const MainApp());
+      }
+      
+      class MainApp extends StatefulWidget {
+        const MainApp({super.key});
+      
+        @override
+        State<MainApp> createState() => _MainAppState();
+      }
+      
+      class _MainAppState extends State<MainApp> {
+        @override
+        void initState() {
+          super.initState();
+          FirebaseMessaging.onMessageOpenedApp.listen((message) {
+            setState(() {
+              title = message.notification!.title;
+              data = message.notification!.body;
+            });
+          });
+        }
+      
+        @override
+        Widget build(BuildContext context) {
+          return MaterialApp(
+            home: Scaffold(
+              appBar: AppBar(
+                backgroundColor: Colors.blue,
+                centerTitle: true,
+                title: const Text('Test Notifikasi Firebase',
+                    style: TextStyle(color: Colors.white)),
+              ),
+              body: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      '$title',
+                      style: const TextStyle(fontSize: 20),
+                    ),
+                    Text('$data'),
+                  ],
+                ),
+              ),
+            ),
+          );
+        }
+      }
+     ```
+     
+   - firebase.dart
+     ``` dart
+      import 'package:firebase_messaging/firebase_messaging.dart';
+      import 'notif.dart';
+      
+      class FirebaseApi {
+        final _firebaseMessaging = FirebaseMessaging.instance;
+      
+        Future<void> initFCM() async {
+          final fCMToken = await _firebaseMessaging.getToken();
+          print('FCM Token: $fCMToken');
+      
+          await _firebaseMessaging.requestPermission(
+            alert: true,
+            badge: true,
+            sound: true,
+          );
+      
+          FirebaseMessaging.onMessage.listen((message) {
+            LocalNotificationHandler().showLocalNotification(message);
+          });
+      
+          FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+      
+          _firebaseMessaging.setForegroundNotificationPresentationOptions(
+            alert: true,
+            badge: true,
+            sound: true,
+          );
+        }
+      }
+      
+      Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+        print("Message Title: ${message.notification?.title}");
+        print('Message Data : ${message.notification?.body}');
+      }
+     ```
+
+   - notif.dart
+     ``` dart
+      import 'package:firebase_messaging/firebase_messaging.dart';
+      import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+      
+      class LocalNotificationHandler {
+        final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+            FlutterLocalNotificationsPlugin();
+      
+        Future<void> initLocalNotifications() async {
+          const AndroidInitializationSettings androidSettings =
+              AndroidInitializationSettings('@mipmap/ic_launcher');
+      
+          const InitializationSettings initializationSettings =
+              InitializationSettings(
+            android: androidSettings,
+          );
+      
+          await flutterLocalNotificationsPlugin.initialize(initializationSettings);
+        }
+      
+        Future<void> showLocalNotification(RemoteMessage message) async {
+          const AndroidNotificationDetails androidDetails =
+              AndroidNotificationDetails(
+            'default_channel', // ID channel
+            'Default Notifications', // Nama channel
+            importance: Importance.high,
+            priority: Priority.high,
+          );
+      
+          const NotificationDetails platformDetails = NotificationDetails(
+            android: androidDetails,
+          );
+      
+          await flutterLocalNotificationsPlugin.show(
+            message.hashCode, // ID unik notifikasi
+            message.notification?.title, // Judul notifikasi
+            message.notification?.body, // Konten notifikasi
+            platformDetails,
+          );
+        }
+      }
+     ```
+     
+2. Output
+   - notif <br> ![WhatsApp Image 2024-12-03 at 03 28 37_68e92275](https://github.com/user-attachments/assets/7c62da65-2402-46f8-987e-7d121e2a9855)
+
+   - app <br> ![WhatsApp Image 2024-12-03 at 03 28 38_f5c4d494](https://github.com/user-attachments/assets/9cfcdda9-285c-49b6-a4a4-d148c16c142b)
+
+3. Penjelasan
+   - main.dart berisi kodingan utama untuk menampilkan apa yang ada pada aplikasi dan inisiasi fungsi lain
+   - notif.dart berisi kodingan untuk menghandle notifikasi sehingga dapat di tampilkan
+   - firebase.dart berisi kodingan untuk menghandle fungsi firebase cloud message
