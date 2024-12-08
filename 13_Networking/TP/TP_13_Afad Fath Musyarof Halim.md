@@ -55,7 +55,6 @@ State management adalah bagaimana cara Flutter mengelola data yang berubah-ubah 
 <br>
 
 - kodingan
-<br>
 
 ``` dart
 import 'package:flutter/material.dart';
@@ -126,8 +125,8 @@ class HomePage extends StatelessWidget {
 <br>
 
 - Screenshot
-  - a
-  - a
+  - Tambah <br> <img src="https://github.com/user-attachments/assets/966a8191-e531-4ee0-ab73-b146249a5847" alt="tambah" width="200" height="400"> 
+  - Reset <br> <img src="https://github.com/user-attachments/assets/812225b4-f877-48ab-94f6-721a04e5dccf" alt="reset" width="200" height="400">
 - Penjelasan
   - `var counter = 0.obs` sebagai wadah dari nilai counter
   - `void tambahCounter()` untuk menambah nilai counter
