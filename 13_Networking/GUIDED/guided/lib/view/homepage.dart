@@ -101,6 +101,15 @@ class HomePage extends StatelessWidget {
                 Get.changeTheme(ThemeData.dark());
               },
             ),
+            ListTile(
+              leading: const Icon(Icons.nightlight_round),
+              title: const Text("Pink Theme"),
+              onTap: () {
+                Get.changeTheme(ThemeData.light().copyWith(
+                    colorScheme:
+                        ColorScheme.fromSwatch(primarySwatch: Colors.pink)));
+              },
+            ),
           ],
         ),
       ),
