@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(fontSize: 24),
               ),
               Text(
-                "Counter: ${controller.counter.value}",
+                controller.counter.value.toString(),
                 style: const TextStyle(fontSize: 24),
               ),
             ],
