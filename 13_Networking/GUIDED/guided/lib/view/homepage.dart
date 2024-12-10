@@ -58,8 +58,22 @@ class HomePage extends StatelessWidget {
             onPressed: () => Get.toNamed("/detail"),
             child: const Icon(Icons.details_rounded),
           ),
+          const SizedBox(height: 10),
+          FloatingActionButton(
+              onPressed: () => getsnack(),
+              child: const Icon(Icons.details_rounded)),
         ],
       ),
+    );
+  }
+
+  void getsnack() {
+    Get.snackbar(
+      "INI SNACKBAR",
+      "INI ISINYA",
+      snackPosition: SnackPosition.BOTTOM,
+      backgroundColor: Colors.blue,
+      colorText: Colors.white,
     );
   }
 }
