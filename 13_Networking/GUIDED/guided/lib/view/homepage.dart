@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:guided/view/counter_controller.dart';
+import 'package:guided/view_model/counter_controller.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key, required this.title});
@@ -52,6 +52,11 @@ class HomePage extends StatelessWidget {
               controller.resetCounter();
             },
             child: const Icon(Icons.refresh),
+          ),
+          const SizedBox(height: 10),
+          FloatingActionButton(
+            onPressed: () => Get.toNamed("/detail"),
+            child: const Icon(Icons.details_rounded),
           ),
         ],
       ),
