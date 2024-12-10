@@ -18,9 +18,7 @@ class DetailPage extends StatelessWidget {
               child: Text('INI DETAIL BANG', style: TextStyle(fontSize: 24)),
             ),
             ElevatedButton(
-                onPressed: () {
-                  Get.back();
-                },
+                onPressed: () => Get.back(), 
                 child: const Text("Back")),
           ],
         ),

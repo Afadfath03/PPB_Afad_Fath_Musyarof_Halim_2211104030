@@ -61,7 +61,11 @@ class HomePage extends StatelessWidget {
           const SizedBox(height: 10),
           FloatingActionButton(
               onPressed: () => getsnack(),
-              child: const Icon(Icons.details_rounded)),
+              child: const Icon(Icons.question_answer_rounded)),
+          const SizedBox(height: 10),
+          FloatingActionButton(
+              onPressed: () => getbottomshet(),
+              child: const Icon(Icons.question_answer_rounded)),
         ],
       ),
     );
@@ -74,6 +78,32 @@ class HomePage extends StatelessWidget {
       snackPosition: SnackPosition.BOTTOM,
       backgroundColor: Colors.blue,
       colorText: Colors.white,
+    );
+  }
+
+  void getbottomshet() {
+    Get.bottomSheet(
+      Container(
+        color: Colors.white,
+        child: Wrap(
+          children: [
+            ListTile(
+              leading: const Icon(Icons.wb_sunny),
+              title: const Text("Light Theme"),
+              onTap: () {
+                Get.changeTheme(ThemeData.light());
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.nightlight_round),
+              title: const Text("Dark Theme"),
+              onTap: () {
+                Get.changeTheme(ThemeData.dark());
+              },
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
