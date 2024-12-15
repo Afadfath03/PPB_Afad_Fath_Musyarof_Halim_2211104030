@@ -360,9 +360,10 @@
         ```
 
 2. Output
-   1. Home <br>
-   2. Tambah <br>
-   3. Home (Setelah Tambah) <br>
+   1. Home <br> <img src="https://github.com/user-attachments/assets/b6792bbe-5279-49d7-ac3e-780ced728373" alt="default" width="200"/>
+   2. Tambah <br> <img src="https://github.com/user-attachments/assets/9c0d4eb3-73a7-40b8-b216-a75e1febba0e" alt="tambah" width="200"/>
+   3. Home (Setelah Tambah) <br> <img src="https://github.com/user-attachments/assets/a6b81903-fc6e-4b19-8fd9-64582ae559b5" alt="home (Updated)" width="200"/>
+
 
 3. Penjelasan
    - `MyApp`: Inisiasi aplikasi, mengatur routing, dan menetapkan Homepage sebagai halaman awal
